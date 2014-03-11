@@ -39,11 +39,11 @@ var object = {}
     //赋予自动事件的能力
     Observer.call(object)		
 
-//订阅
-object.subscribe('aaaa',function(){		
-	console.log('订阅了aaa')
-	return '返回值'
-})
+    //订阅
+    object.subscribe('aaaa',function(){		
+    	console.log('订阅了aaa')
+    	return '返回值'
+    })
 
 object.subscribe('bbbb',function(){		
 	console.log('订阅了bbbb')
