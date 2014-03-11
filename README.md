@@ -34,23 +34,23 @@ aaObserver
     这里你可以输入一段代码
 
 ### 比如我们可以在多行文本框里输入一段代码,来一个Java版本的HelloWorld吧
-var object = {}
+var object = {}		
 
 //赋予自动事件的能力
-Observer.call(object)
+Observer.call(object)		
 
 //订阅
-object.subscribe('aaaa',function(){
+object.subscribe('aaaa',function(){		
 	console.log('订阅了aaa')
 	return '返回值'
 })
 
-object.subscribe('bbbb',function(){
+object.subscribe('bbbb',function(){		
 	console.log('订阅了bbbb')
 	return '返回值'
 })
 
-//执行,并且得到返回值
+//执行,并且得到返回值		
 //r得到返回值
 var r = object.publish('aaaa');
         object.publish('bbbb');
